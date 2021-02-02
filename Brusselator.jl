@@ -7,7 +7,7 @@ rn = @reaction_network begin
     k4, X → D
 end k1 k2 k3 k4
 
-p = (1., 1., 1., .6) #k1 k2 k3 k4 
+p = (1., 1., 1., .65) #k1 k2 k3 k4 
 tspan = (.0, 30.)
 u0 = [1., 1., 1., 1.7, 1., 1.]   # A X Y B C D
 osys  = convert(ODESystem, rn)
